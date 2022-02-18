@@ -53,7 +53,7 @@ app.post('/dblwebhook', webhook.middleware(), async (req, res) => {
 
     const embed = new Discord.MessageEmbed()
         .setAuthor(`${config.bot_name}'s Voting System'`, `${config.logo || 'https://i.imgur.com/nhyrOYD.png'}`)
-        .setColor('GREEN')
+        .setColor('2f3136')
         .setTitle(`${votedUser.username} Just Voted`)
         .setDescription(`**${votedUser.username}#${votedUser.discriminator}** (${votedUser.id}) just voted **${config.bot_name}**!`)
         .setFooter(`Vote #${vote_number}`)
